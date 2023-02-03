@@ -60,7 +60,12 @@ export default function App() {
               className="popupBody container"
               style={{ overflowX: 'scroll', height: '400px', width: '400px' }}
             >
-              <h2 className="title text-center"> Comments </h2>
+              <h2 className="title float-start"> Comments </h2>
+              <button className="btn btn-danger float-end" onClick={onCancel}>
+                Exit
+              </button>
+              <br />
+              <br />
               <hr />
               {comments.map((comment) => (
                 <>
@@ -76,12 +81,6 @@ export default function App() {
                   <hr />
                 </>
               ))}
-
-              <div className="popup-footer">
-                <button className="text-center" onClick={onCancel}>
-                  Exit
-                </button>
-              </div>
             </div>
           </div>
         </>
