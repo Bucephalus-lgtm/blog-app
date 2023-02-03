@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+input {
+  padding: 5px 10px;
+}
+.container {
+  max-width: 1100px;
+}
+.basic-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.card {
+  background: #f5f4f4;
+  color: #000;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-header {
+  background: #f5f4f4;
+  padding: 15px 15px 0px 15px;
+  text-align: center;
+  margin: 0;
+}
+.card-header img {
+  position: relative;
+  top: 5px;
+}
+.card-body {
+  background: #fff;
+  padding: 15px;
+}
+.title {
+  font-weight: bold;
+  color: #093abf;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  background-color: #093abf;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+.row_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  opacity: 1;
+  z-index: 1;
+}
+.popupBody {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 20px;
+}
+.popup {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+@media (max-width: 900) {
+  .row_group {
+    display: block;
+  }
+}
