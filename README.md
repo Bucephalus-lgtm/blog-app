@@ -29,10 +29,16 @@ $ npm i --legacy-peer-deps
 - [Node](https://nodejs.org/en/download/) ^10.0.0
 - [npm](https://nodejs.org/en/download/package-manager/)
 
-## Client-side usage(PORT: 3000)
+## Run the app
 
 ```terminal
 $ npm start
+```
+
+## Build the app
+
+```terminal
+$ npm run build
 ```
 
 ## Author
